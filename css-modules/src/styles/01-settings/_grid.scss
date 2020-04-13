@@ -1,0 +1,6 @@
+// GRID-SPECIFIC VARIABLES
+// For grid mixin use **ONLY**
+$grid-gutter-width-small: $space; // not currently used, but will need it if we expand the grid to build components that have a multi-column layout on mobile
+$grid-gutter-width: $space-xl;
+// $grid-columns: 12;
+// $total-gutter-width: $grid-gutter-width * 9; // TODO: this may have to become modified if we need to distinguish between the $grid-gutter-width and the $grid-gutter-width small variables

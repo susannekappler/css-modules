@@ -1,0 +1,27 @@
+// TODO: Replace the media query value 600px with the correct breakpoint variable
+@mixin set-text-properties($mapName, $fontSize) {
+	@if $fontSize {
+		$fontSizeMap: deep-get($mapName, "sizes", $fontSize);
+
+		font-size: map-get($fontSizeMap, "mobile-size");
+		line-height: map-get($fontSizeMap, "mobile-line");
+		letter-spacing: map-get($fontSizeMap, "mobile-spacing");
+
+		@include breakpoint("small") {
+			font-size: map-get($fontSizeMap, "desktop-size");
+			line-height: map-get($fontSizeMap, "desktop-line");
+			letter-spacing: map-get($fontSizeMap, "desktop-spacing");
+		}
+	}
+
+	@else {
+		@warn "`#{$fontSize}` is required";
+	}
+
+	color: map-get($mapName, color);
+	font-family: map-get($mapName, family);
+	font-style: map-get($mapName, style);
+	font-weight: map-get($mapName, weight);
+	text-decoration: map-get($mapName, decoration);
+	text-transform: map-get($mapName, transform);
+}

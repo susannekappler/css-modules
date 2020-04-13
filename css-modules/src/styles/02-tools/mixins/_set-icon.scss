@@ -1,0 +1,3 @@
+@mixin set-icon($icon, $state) {
+	background-image: deep-get($icons, $icon, $state);
+}

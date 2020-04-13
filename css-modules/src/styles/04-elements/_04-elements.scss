@@ -1,0 +1,207 @@
+html {
+	font-size: 16px;
+}
+
+body {
+	@include set-text-properties($theme-copy, "copy");
+
+	background-color: $element-body-background-color;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	height: 100%;
+	min-height: 100%;
+
+	* {
+		margin-bottom: 0;
+	}
+}
+
+h1 {
+	@include set-text-properties($theme-heading, "pageHeading");
+}
+
+h2 {
+	@include set-text-properties($theme-heading, "sectionHeading");
+}
+
+h3 {
+	@include set-text-properties($theme-heading, "headingThree");
+}
+
+h4 {
+	@include set-text-properties($theme-heading, "headingFour");
+}
+
+h5,
+h6 {
+	@include set-text-properties($theme-heading, "headingFive");
+}
+
+p {
+	margin: $theme-margin-stack;
+}
+
+a {
+	color: $theme-text-color-action;
+
+	&:hover,
+	&:active,
+	&:focus {
+		color: $theme-text-color-action-hover;
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: $theme-margin-stack-l;
+
+	+ ol,
+	+ ul,
+	+ dl {
+		margin: $theme-margin-stack-2xs;
+	}
+}
+
+h1 + h2,
+h2 + h3,
+h3 + h4,
+h4 + h5,
+h5 + h6 {
+	margin-top: 0;
+}
+
+ol,
+ul {
+	margin-top: $space;
+
+	ol,
+	ul {
+		margin-top: 0;
+	}
+}
+
+ul {
+	list-style-type: $element-unordered-list-style;
+}
+
+small {
+	@include set-text-properties($theme-copy, "copyXSmall");
+}
+
+hr {
+	background-color: $theme-border-color-primary;
+	border: 0;
+	height: 1px; /* The value is set in px so that any change in default font size will not impact hr  */
+	margin: $theme-margin-stack;
+}
+
+fieldset {
+	border: 0;
+	padding: 0;
+}
+
+video {
+	max-width: 100%;
+}
+
+table {
+	border: 0;
+	border-collapse: collapse;
+	display: table;
+	margin: $theme-margin-stack;
+	width: 100%;
+
+	//Necessary since table elements need to be wrapped in a container that can scroll on x
+
+	&:first-child {
+		margin: $theme-margin-stack;
+	}
+}
+
+thead {
+	background-color: $element-table-header-background-color;
+	color: $element-table-header-text-color;
+	display: table-header-group;
+}
+
+tr {
+	display: table-row;
+	background-color: $element-table-row-background-color-odd;
+	border-top: $theme-border-secondary;
+
+	thead & {
+		border: 0;
+	}
+}
+
+tbody {
+	color: $element-table-body-text-color;
+	display: table-row-group;
+
+	@include breakpoint("custom") {
+		tr:nth-child(odd) {
+			background-color: $element-table-row-background-color-odd;
+		}
+
+		tr:nth-child(even) {
+			background-color: $element-table-row-background-color-even;
+		}
+	}
+}
+
+tfoot {
+	display: table-footer-group;
+}
+
+col {
+	display: table-column;
+}
+
+colgroup {
+	display: table-column-group;
+}
+
+caption {
+	display: table-caption;
+}
+
+th {
+	padding: $space-xl 0 $space-xs 0;
+
+	&[role="rowheader"] {
+		font-weight: $font-weight-400;
+	}
+
+	&:not([role="rowheader"]) {
+		@include set-text-properties($theme-copy-label, "copyXSmall");
+	}
+}
+
+td {
+	padding: $theme-padding-inset-xl 0;
+}
+
+th,
+td {
+	display: table-cell;
+	text-align: left;
+}
+
+code {
+	color: $theme-text-color-action;
+}
+
+mark {
+	background-color: $theme-color-secondary;
+	color: $theme-text-color-inverse;
+}
+
+sub,
+sup,
+figcaption {
+	@include set-text-properties($theme-copy, "copyXSmall");
+}

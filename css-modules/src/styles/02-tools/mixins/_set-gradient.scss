@@ -1,0 +1,4 @@
+@mixin set-gradient($center-point-fill: $theme-center-point-fill, $background-color: $theme-color-primary) {
+	background-color: $background-color;
+	background-image: linear-gradient($theme-gradient-degree, $theme-start-point-color $theme-start-point-fill, $theme-center-point-color $center-point-fill, $theme-end-point-color $theme-end-point-fill);
+}

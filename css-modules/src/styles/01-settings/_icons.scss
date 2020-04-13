@@ -1,0 +1,309 @@
+$img_path: "~@/assets/icons/";
+
+$icons: (
+	accident: (
+		default: url("#{$img_path}product/accident.svg")
+	),
+	cancer: (
+		default: url("#{$img_path}product/cancer.svg")
+	),
+	critical: (
+		default: url("#{$img_path}product/critical.svg")
+	),
+	dental: (
+		default: url("#{$img_path}product/dental.svg")
+	),
+	disability: (
+		default: url("#{$img_path}product/disability.svg")
+	),
+	hospital: (
+		default: url("#{$img_path}product/hospital.svg")
+	),
+	life: (
+		default: url("#{$img_path}product/life.svg")
+	),
+	utility-nav-help: (
+		default: url("#{$img_path}utility-nav/help.svg")
+	),
+	utility-nav-messages: (
+		default: url("#{$img_path}utility-nav/messages.svg")
+	),
+	utility-nav-messages-alert: (
+		default: url("#{$img_path}utility-nav/messages-alert.svg")
+	),
+	utility-nav-profile: (
+		default: url("#{$img_path}utility-nav/profile.svg")
+	),
+	utility-nav-transfer: (
+		default: url("#{$img_path}utility-nav/transfer.svg")
+	),
+	illustration-accounts: (
+		default: url("#{$img_path}illustration-icons/accounts.svg")
+	),
+	illustration-admin: (
+		default: url("#{$img_path}illustration-icons/admin.svg")
+	),
+	illustration-attachments: (
+		default: url("#{$img_path}illustration-icons/attachments.svg")
+	),
+	illustration-billing: (
+		default: url("#{$img_path}illustration-icons/billing.svg")
+	),
+	illustration-employees: (
+		default: url("#{$img_path}illustration-icons/employees.svg")
+	),
+	illustration-help: (
+		default: url("#{$img_path}illustration-icons/help.svg")
+	),
+	illustration-online-payment: (
+		default: url("#{$img_path}illustration-icons/online-payment.svg")
+	),
+	illustration-payment-date: (
+		default: url("#{$img_path}illustration-icons/payment-date.svg")
+	),
+	illustration-payment: (
+		default: url("#{$img_path}illustration-icons/payment.svg")
+	),
+	illustration-plans: (
+		default: url("#{$img_path}illustration-icons/plans.svg")
+	),
+	illustration-reports: (
+		default: url("#{$img_path}illustration-icons/reports.svg")
+	),
+	illustration-sent: (
+		default: url("#{$img_path}illustration-icons/sent.svg")
+	),
+	illustration-tax: (
+		default: url("#{$img_path}illustration-icons/tax.svg")
+	),
+	illustration-transfers: (
+		default: url("#{$img_path}illustration-icons/transfers.svg")
+	),
+	add: (
+		default: url("#{$img_path}global/add/add-dark-grey.svg"),
+		action: url("#{$img_path}global/add/add-mint.svg"),
+		inverse: url("#{$img_path}global/add/add-white.svg")
+	),
+	alert: (
+		default: url("#{$img_path}global/alert/alert-dark-grey.svg"),
+		action: url("#{$img_path}global/alert/alert-mint.svg"),
+		inverse: url("#{$img_path}global/alert/alert-white.svg")
+	),
+	approved: (
+		default: url("#{$img_path}global/approved/approved-dark-grey.svg"),
+		action: url("#{$img_path}global/approved/approved-mint.svg"),
+		inverse: url("#{$img_path}global/approved/approved-white.svg"),
+		positive: url("#{$img_path}global/approved/approved-leaf.svg")
+	),
+	arrow-circle: (
+		default: url("#{$img_path}global/arrow-circle/arrow-circle-dark-grey.svg"),
+		action: url("#{$img_path}global/arrow-circle/arrow-circle-mint.svg"),
+		inverse: url("#{$img_path}global/arrow-circle/arrow-circle-white.svg")
+	),
+	arrow-down: (
+		default: url("#{$img_path}global/arrow-down/arrow-down-dark-grey.svg"),
+		action: url("#{$img_path}global/arrow-down/arrow-down-mint.svg"),
+		inverse: url("#{$img_path}global/arrow-down/arrow-down-white.svg")
+	),
+	arrow-right: (
+		default: url("#{$img_path}global/arrow-right/arrow-right-light-grey.svg"),
+		action: url("#{$img_path}global/arrow-right/arrow-right-mint.svg"),
+		inverse: url("#{$img_path}global/arrow-right/arrow-right-white.svg"),
+	),
+	arrow-left: (
+		default: url("#{$img_path}global/arrow-left/arrow-left-light-grey.svg"),
+		action: url("#{$img_path}global/arrow-left/arrow-left-mint.svg"),
+		inverse: url("#{$img_path}global/arrow-left/arrow-left-white.svg"),
+	),
+	arrow-up: (
+		default: url("#{$img_path}global/arrow-up/arrow-up-dark-grey.svg"),
+		action: url("#{$img_path}global/arrow-up/arrow-up-mint.svg"),
+		inverse: url("#{$img_path}global/arrow-up/arrow-up-white.svg")
+	),
+	attach: (
+		default: url("#{$img_path}global/attach/attach-dark-grey.svg"),
+		action: url("#{$img_path}global/attach/attach-mint.svg"),
+		inverse: url("#{$img_path}global/attach/attach-white.svg"),
+		information: url("#{$img_path}global/attach/attach-steel-blue.svg")
+	),
+	calendar: (
+		default: url("#{$img_path}global/calendar/calendar-dark-grey.svg"),
+		action: url("#{$img_path}global/calendar/calendar-mint.svg"),
+		inverse: url("#{$img_path}global/calendar/calendar-white.svg")
+	),
+	cancel: (
+		default: url("#{$img_path}global/cancel/cancel-dark-grey.svg"),
+		action: url("#{$img_path}global/cancel/cancel-mint.svg"),
+		inverse: url("#{$img_path}global/cancel/cancel-white.svg")
+	),
+	secondary-cancel: (
+		default: url("#{$img_path}global/cancel/secondary-cancel-dark-grey.svg"),
+		action: url("#{$img_path}global/cancel/secondary-cancel-mint.svg"),
+		inverse: url("#{$img_path}global/cancel/secondary-cancel-white.svg")
+	),
+	check: (
+		default: url("#{$img_path}global/check/check-dark-grey.svg"),
+		action: url("#{$img_path}global/check/check-mint.svg"),
+		inverse: url("#{$img_path}global/check/check-white.svg"),
+		positive: url("#{$img_path}global/check/check-leaf.svg")
+	),
+	clock: (
+		default: url("#{$img_path}global/clock/clock-dark-grey.svg"),
+		action: url("#{$img_path}global/clock/clock-mint.svg"),
+		inverse: url("#{$img_path}global/clock/clock-white.svg")
+	),
+	close: (
+		default: url("#{$img_path}global/close/close-darkest.svg"),
+		action: url("#{$img_path}global/close/close-mint.svg"),
+		inverse: url("#{$img_path}global/close/close-white.svg"),
+		warning: url("#{$img_path}global/close/close-tangerine.svg")
+	),
+	delete: (
+		default: url("#{$img_path}global/delete/delete-dark-grey.svg"),
+		action: url("#{$img_path}global/delete/delete-mint.svg"),
+		inverse: url("#{$img_path}global/delete/delete-white.svg")
+	),
+	dots: (
+		default: url("#{$img_path}global/dots/dots-dark-grey.svg"),
+		action: url("#{$img_path}global/dots/dots-mint.svg"),
+		inverse: url("#{$img_path}global/dots/dots-white.svg")
+	),
+	download-doc: (
+		default: url("#{$img_path}global/download-doc/download-doc-dark-grey.svg"),
+		action: url("#{$img_path}global/download-doc/download-doc-mint.svg"),
+		inverse: url("#{$img_path}global/download-doc/download-doc-white.svg")
+	),
+	download: (
+		default: url("#{$img_path}global/download/download-dark-grey.svg"),
+		action: url("#{$img_path}global/download/download-mint.svg"),
+		inverse: url("#{$img_path}global/download/download-white.svg")
+	),
+	edit: (
+		default: url("#{$img_path}global/edit/edit-dark-grey.svg"),
+		action: url("#{$img_path}global/edit/edit-mint.svg"),
+		inverse: url("#{$img_path}global/edit/edit-white.svg")
+	),
+	expand: (
+		default: url("#{$img_path}global/expand/expand-dark-grey.svg"),
+		action: url("#{$img_path}global/expand/expand-mint.svg"),
+		inverse: url("#{$img_path}global/expand/expand-white.svg")
+	),
+	facebook: (
+		default: url("#{$img_path}social-nav/facebook.svg"),
+		inverse: url("#{$img_path}social-nav/facebook-hover.svg")
+	),
+	filter: (
+		default: url("#{$img_path}global/filter/filter-dark-grey.svg"),
+		action: url("#{$img_path}global/filter/filter-mint.svg"),
+		inverse: url("#{$img_path}global/filter/filter-white.svg")
+	),
+	folder: (
+		default: url("#{$img_path}global/folder/folder-dark-grey.svg"),
+		action: url("#{$img_path}global/folder/folder-mint.svg"),
+		inverse: url("#{$img_path}global/folder/folder-white.svg")
+	),
+	help: (
+		default: url("#{$img_path}global/help/help-dark-grey.svg"),
+		dark: url("#{$img_path}global/help/help-dark.svg"),
+		action: url("#{$img_path}global/help/help-mint.svg"),
+		inverse: url("#{$img_path}global/help/help-white.svg")
+	),
+	linkedin: (
+		default: url("#{$img_path}social-nav/linkedin.svg"),
+		inverse: url("#{$img_path}social-nav/linkedin-hover.svg")
+	),
+	lock: (
+		default: url("#{$img_path}global/lock/lock-dark-grey.svg"),
+		action: url("#{$img_path}global/lock/lock-mint.svg"),
+		inverse: url("#{$img_path}global/lock/lock-white.svg")
+	),
+	menu: (
+		default: url("#{$img_path}global/menu/menu-dark-grey.svg"),
+		action: url("#{$img_path}global/menu/menu-mint.svg"),
+		inverse: url("#{$img_path}global/menu/menu-white.svg"),
+		warning: url("#{$img_path}global/menu/menu-tangerine.svg")
+	),
+	messages: (
+		default: url("#{$img_path}global/messages/messages-dark-grey.svg"),
+		action: url("#{$img_path}global/messages/messages-mint.svg"),
+		inverse: url("#{$img_path}global/messages/messages-white.svg")
+	),
+	new-indicator: (
+		default: url("#{$img_path}global/new-indicator/new-indicator-dark-grey.svg")
+	),
+	new-indicator-circle: (
+		default: url("#{$img_path}global/new-indicator-circle/new-indicator-circle-yellow.svg")
+	),
+	paperless: (
+		default: url("#{$img_path}global/paperless/paperless-dark-grey.svg"),
+		action: url("#{$img_path}global/paperless/paperless-mint.svg"),
+		inverse: url("#{$img_path}global/paperless/paperless-white.svg")
+	),
+	payment: (
+		default: url("#{$img_path}global/payment/payment-dark-grey.svg"),
+		action: url("#{$img_path}global/payment/payment-mint.svg"),
+		inverse: url("#{$img_path}global/payment/payment-white.svg")
+	),
+	pending: (
+		default: url("#{$img_path}global/pending/pending-dark-grey.svg"),
+		action: url("#{$img_path}global/pending/pending-mint.svg"),
+		inverse: url("#{$img_path}global/pending/pending-white.svg"),
+		negative: url("#{$img_path}global/pending/pending-dark-red.svg"),
+		warning: url("#{$img_path}global/pending/pending-tangerine.svg")
+	),
+	pending-underwriting: (
+		warning: url("#{$img_path}global/pending-underwriting/pending-underwriting-tangerine.svg")
+	),
+	print: (
+		default: url("#{$img_path}global/print/print-dark-grey.svg"),
+		action: url("#{$img_path}global/print/print-mint.svg"),
+		inverse: url("#{$img_path}global/print/print-white.svg")
+	),
+	processing: (
+		default: url("#{$img_path}global/processing/processing-dark-grey.svg"),
+		action: url("#{$img_path}global/processing/processing-mint.svg"),
+		inverse: url("#{$img_path}global/processing/processing-white.svg"),
+		warning: url("#{$img_path}global/processing/processing-tangerine.svg"),
+		positive: url("#{$img_path}global/processing/processing-leaf.svg")
+	),
+	received: (
+		default: url("#{$img_path}global/received/received-dark-grey.svg"),
+		action: url("#{$img_path}global/received/received-mint.svg"),
+		inverse: url("#{$img_path}global/received/received-white.svg"),
+		information: url("#{$img_path}global/received/received-steel-blue.svg")
+	),
+	received-alert: (
+		default: url("#{$img_path}global/received-alert/received-alert-dark-grey.svg"),
+		information: url("#{$img_path}global/received-alert/received-alert-steel-blue.svg")
+	),
+	reduce: (
+		default: url("#{$img_path}global/reduce/reduce-dark-grey.svg"),
+		action: url("#{$img_path}global/reduce/reduce-mint.svg"),
+		inverse: url("#{$img_path}global/reduce/reduce-white.svg")
+	),
+	search: (
+		default: url("#{$img_path}global/search/search-dark-grey.svg"),
+		action: url("#{$img_path}global/search/search-mint.svg"),
+		inverse: url("#{$img_path}global/search/search-white.svg")
+	),
+	send: (
+		default: url("#{$img_path}global/send/send-dark-grey.svg"),
+		action: url("#{$img_path}global/send/send-mint.svg"),
+		inverse: url("#{$img_path}global/send/send-white.svg"),
+		information: url("#{$img_path}global/send/send-steel-blue.svg")
+	),
+	twitter: (
+		default: url("#{$img_path}social-nav/twitter.svg"),
+		inverse: url("#{$img_path}social-nav/twitter-hover.svg")
+	),
+	undo: (
+		default: url("#{$img_path}global/undo/undo-arrow-dark-grey.svg"),
+		inverse: url("#{$img_path}global/undo/undo-arrow-white.svg")
+	),
+	warning: (
+		default: url("#{$img_path}global/warning/warning-darkest.svg"),
+		action: url("#{$img_path}global/warning/warning-mint.svg"),
+		inverse: url("#{$img_path}global/warning/warning-white.svg"),
+		negative: url("#{$img_path}global/warning/warning-dark-red.svg")
+	)
+);

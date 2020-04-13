@@ -1,0 +1,13 @@
+$breakpoint-small: 48rem; //768px
+$breakpoint-custom: 52.5rem; // 840px - DO NOT USE THIS BREAKPOINT! This is a temporary breakpoint to fix issues with the table layouts.
+$breakpoint-custom-2: 56rem; // 896px - DO NOT USE THIS BREAKPOINT! This is a temporary breakpoint to fix issues with the table layouts.
+$breakpoint-medium: 63.75rem; //1020px
+$breakpoint-large: 78rem; //1248px
+
+$breakpoints: (
+	"small": $breakpoint-small, //768px
+	"custom": $breakpoint-custom, // 840px - DO NOT USE THIS BREAKPOINT! This is a temporary breakpoint to fix issues with the table layouts.
+	"custom-2": $breakpoint-custom-2, // 896px - DO NOT USE THIS BREAKPOINT! This is a temporary breakpoint to fix issues with the table layouts.
+	"medium": $breakpoint-medium, //1020px
+	"large": $breakpoint-large //1248px
+);

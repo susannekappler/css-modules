@@ -1,0 +1,19 @@
+@mixin set-input-styles($display: block) {
+	@include set-text-properties($theme-copy, "copySmall");
+
+	display: unquote($display);
+	background-color: $theme-background-color-secondary;
+	border-radius: $theme-border-radius-default;
+	border: $theme-input-border;
+	margin: $theme-margin-stack-xs;
+	padding: $theme-padding-inset-xs $theme-padding-inset;
+	width: 100%;
+
+	.cl-input--negative & {
+		border: $theme-input-border-negative;
+	}
+
+	&:required {
+		box-shadow: none;  // removes :required red shadow styling firefox
+	}
+}

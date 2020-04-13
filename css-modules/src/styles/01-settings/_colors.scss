@@ -1,0 +1,99 @@
+///////////////////////////////////////////////////////////////////////////////////////////
+// Simple Variables
+///////////////////////////////////////////////////////////////////////////////////////////
+$color-steel-blue: #19557f;
+$color-steel-blue-dark-1: #154b6f;
+$color-steel-blue-dark-2: #104566;
+$color-steel-blue-dark-3: #0b3d59;
+$color-steel-blue-light-3: #d8e5ee;
+$color-mint: #1a8573;
+$color-mint-dark-1: #1a7365;
+$color-mint-dark-2: #136259;
+$color-mint-dark-4: #003f3f;
+$color-tangerine: #f1c44f;
+$color-black: #000000;
+$color-dark-grey: #2e2e2e;
+$color-dark-grey-light-2: #525252;
+$color-dark-grey-light-4: #757575;
+$color-light-grey-dark-2: #aaaaaa;
+$color-light-grey-light-1: #cdcdcd;
+$color-light-grey-light-2: #dbdbdb;
+$color-light-grey-light-4: #f7f7f7;
+$color-white: #ffffff;
+$color-dark-red-light-4: #a64441;
+$color-leaf-dark-1: #487f3f;
+$color-leaf: #78b25d;
+$color-slate: #5b7183;
+$color-slate-light-4: #f2f6fa;
+$color-ocean-dark-4: #025b73;
+$color-ocean-dark-1: #1a809c;
+$color-ocean: #3baecc;
+$color-ocean-light-1: #7ecfe6;
+$color-ocean-light-3: #b5e4f2;
+$color-ocean-light-4: #ecf9ff;
+$color-ocean-custom: #c7f3ff;
+
+///////////////////////////////////////////////////////////////////////////////////////////
+// Themed/Complex Variables
+///////////////////////////////////////////////////////////////////////////////////////////
+$theme-color-primary: $color-steel-blue;
+$theme-color-primary-dark-1: $color-steel-blue-dark-1;
+$theme-color-primary-dark-2: $color-steel-blue-dark-2;
+$theme-color-primary-darkest: $color-steel-blue-dark-3;
+$theme-color-secondary: $color-mint;
+$theme-color-secondary-dark-1: $color-mint-dark-1;
+$theme-color-secondary-dark-2: $color-mint-dark-2;
+$theme-color-secondary-darkest: $color-mint-dark-4;
+
+$theme-color-negative: $color-dark-red-light-4;
+$theme-color-positive-dark: $color-leaf-dark-1;
+$theme-color-positive: $color-leaf;
+$theme-color-warning: $color-tangerine;
+$theme-color-info: $color-slate;
+
+$theme-color-neutral-darkest: $color-dark-grey;
+$theme-color-neutral-dark-2: $color-dark-grey-light-2;
+$theme-color-neutral-dark-1: $color-dark-grey-light-4;
+$theme-color-neutral-dark: $color-light-grey-dark-2;
+$theme-color-neutral: $color-light-grey-light-1;
+$theme-color-neutral-light: $color-light-grey-light-2;
+$theme-color-neutral-light-1: $color-light-grey-light-4;
+$theme-color-neutral-light-2: $color-slate-light-4;
+$theme-color-neutral-lightest: $color-white;
+
+// Text color variables should only be applied to the color property
+$theme-text-color-primary: $color-dark-grey;
+$theme-text-color-secondary: $color-dark-grey-light-2;
+$theme-text-color-spotlight: $color-steel-blue-dark-1;
+$theme-text-color-inverse: $color-white;
+$theme-text-color-inverse-secondary: $color-steel-blue-light-3;
+$theme-text-color-neutral: $color-light-grey-dark-2;
+$theme-text-color-disabled: $color-light-grey-dark-2;
+$theme-text-color-action: $color-mint-dark-1;
+$theme-text-color-action-hover: $color-mint-dark-2;
+$theme-text-color-action-cta: $color-mint-dark-1;
+$theme-text-color-action-cta-hover: $color-mint-dark-4;
+$theme-text-color-negative: $color-dark-red-light-4;
+
+// Charts and Graphs color variables
+$theme-charts-color-lightest: $color-ocean-light-4;
+$theme-charts-color-lighter: $color-ocean-custom;
+$theme-charts-color-light: $color-ocean-light-3;
+$theme-charts-color-medium: $color-ocean-light-1;
+$theme-charts-color-dark: $color-ocean;
+$theme-charts-color-darker: $color-ocean-dark-1;
+$theme-charts-color-darkest: $color-ocean-dark-4;
+
+// Gradient colors
+$theme-gradient-color-light: $color-ocean-light-3;
+$theme-gradient-color-dark: $theme-color-primary;
+
+$theme-background-color-primary: $color-slate-light-4;
+$theme-background-color-secondary: $color-white;
+$theme-background-color-tertiary: $color-light-grey-light-4;
+
+$theme-border-color-primary: $color-light-grey-light-1;
+$theme-input-border-color-default: $color-light-grey-dark-2;
+$theme-border-color-secondary: $color-light-grey-light-2;
+$theme-border-color-active: $color-tangerine;
+$theme-border-color-transparent: rgba($color-white, 0.2);

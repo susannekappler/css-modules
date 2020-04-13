@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700");
+@import "../02-tools/functions/strip-unit";
+
+///////////////////////////////////////////////////////////////////////////////////////////
+// Typography Specific Functions
+///////////////////////////////////////////////////////////////////////////////////////////
+@function line-height($font-size) {
+	$increment: ($max-line-height - $min-line-height) / ($max-font-size - $min-font-size);
+
+	@return $min-line-height + (($max-font-size - strip-unit($font-size)) * $increment);
+}
+
+@function non-destructive-map-merge($parent-map, $child-map) {
+	$result: $parent-map;
+
+	@each $key, $value in $child-map {
+		@if (not map-has-key($result, $key)) or (type-of(map-get($result, $key)) != type-of($value)) or (not (type-of(map-get($result, $key)) == map and type-of($value) == map)) {
+			$result: map-merge($result, ($key: $value));
+		}
+
+		@else {
+			$result: map-merge($result, ($key: non-destructive-map-merge(map-get($result, $key), $value)));
+		}
+	}
+
+	@return $result;
+}
+///////////////////////////////////////////////////////////////////////////////////////////
+// Simple Variables
+///////////////////////////////////////////////////////////////////////////////////////////
+// Sizes
+$font-2xs: 0.75rem; //12px
+$font-xs: 0.875rem; //14px
+$font-s: 1rem; //16px
+$font: 1.125rem; //18px
+$font-l: 1.25rem; //20px
+$font-xl: 1.375rem; //22px
+$font-2xl: 1.625rem; //26px
+$font-3xl: 2.25rem; //36px
+$font-4xl: 2.75rem; //44px
+
+// Weight
+$font-weight-400: 400;
+$font-weight-600: 600;
+$font-weight-700: 700;
+
+// Utility
+$min-font-size: $font-2xs;
+$max-font-size: $font-4xl;
+$min-line-height: 1;
+$max-line-height: 1.5;
+
+// Line Height
+$font-line-height-2xs: line-height($font-2xs); // 1.5
+$font-line-height-xs: line-height($font-xs); // 1.46875
+$font-line-height-s: line-height($font-s); // 1.4375
+$font-line-height: line-height($font); // 1.40625
+$font-line-height-l: line-height($font-l); // 1.375
+$font-line-height-xl: line-height($font-xl); // 1.34375
+$font-line-height-2xl: line-height($font-2xl); // 1.28125
+$font-line-height-3xl: line-height($font-3xl); // 1.125
+$font-line-height-4xl: line-height($font-4xl); // 1
+
+// Letter Spacing
+$font-letter-spacing-default: normal;
+$font-letter-spacing-2xs: 0.00625rem; // 0.10px
+$font-letter-spacing-xs: 0.009375rem; // 0.15px
+$font-letter-spacing-s: 0.011875rem; // 0.19px
+$font-letter-spacing-m: 0.015625rem; //0.25px
+$font-letter-spacing-l: 0.03125rem; //0.5px
+$font-letter-spacing-xl: 0.046875rem; //0.75px
+$font-letter-spacing-2xl: 0.0625rem; //1px
+
+// Family
+$font-family-open-sans: "Open Sans", "helvetica", "arial", "sans-serif";
+
+///////////////////////////////////////////////////////////////////////////////////////////
+// Themed/Complex Variables
+///////////////////////////////////////////////////////////////////////////////////////////
+$theme-typography-heading: (
+	color: $theme-text-color-spotlight,
+	decoration: none,
+	family: $font-family-open-sans,
+	style: normal,
+	transform: none,
+	weight: $font-weight-700,
+	sizes: (
+		siteHeading: (
+			mobile-size: $font-2xl,
+			mobile-line: $font-line-height-2xl,
+			mobile-spacing: $font-letter-spacing-2xs,
+			desktop-size: $font-4xl,
+			desktop-line: $font-line-height-4xl,
+			desktop-spacing: $font-letter-spacing-s
+		),
+		pageHeading: (
+			mobile-size: $font-2xl,
+			mobile-line: $font-line-height-2xl,
+			mobile-spacing: $font-letter-spacing-2xs,
+			desktop-size: $font-3xl,
+			desktop-line: $font-line-height-3xl,
+			desktop-spacing: $font-letter-spacing-xs
+		),
+		sectionHeading: (
+			mobile-size: $font-xl,
+			mobile-line: $font-line-height-xl,
+			mobile-spacing: $font-letter-spacing-default,
+			desktop-size: $font-2xl,
+			desktop-line: $font-line-height-2xl,
+			desktop-spacing: $font-letter-spacing-2xs
+		),
+		headingThree: (
+			mobile-size: $font-xl,
+			mobile-line: $font-line-height-xl,
+			mobile-spacing: $font-letter-spacing-default,
+			desktop-size: $font-xl,
+			desktop-line: $font-line-height-xl,
+			desktop-spacing: $font-letter-spacing-default
+		),
+		headingFour: (
+			mobile-size: $font-l,
+			mobile-line: $font-line-height-l,
+			mobile-spacing: $font-letter-spacing-default,
+			desktop-size: $font-l,
+			desktop-line: $font-line-height-l,
+			desktop-spacing: $font-letter-spacing-default
+		),
+		headingFive: (
+			mobile-size: $font,
+			mobile-line: $font-line-height,
+			mobile-spacing: $font-letter-spacing-default,
+			desktop-size: $font,
+			desktop-line: $font-line-height,
+			desktop-spacing: $font-letter-spacing-default
+		)
+	)
+);
+
+$theme-typography-copy: (
+	color: $theme-text-color-primary,
+	decoration: none,
+	family: $font-family-open-sans,
+	style: normal,
+	transform: none,
+	weight: $font-weight-400,
+	sizes: (
+		copy: (
+			mobile-size: $font-s,
+			mobile-line: $font-line-height-s,
+			mobile-spacing: $font-letter-spacing-default,
+			desktop-size: $font,
+			desktop-line: $font-line-height,
+			desktop-spacing: $font-letter-spacing-default
+		),
+		copySmall: (
+			mobile-size: $font-s,
+			mobile-line: $font-line-height-s,
+			mobile-spacing: $font-letter-spacing-default,
+			desktop-size: $font-s,
+			desktop-line: $font-line-height-s,
+			desktop-spacing: $font-letter-spacing-default
+		),
+		copyXSmall: (
+			mobile-size: $font-xs,
+			mobile-line: $font-line-height-xs,
+			mobile-spacing: $font-letter-spacing-default,
+			desktop-size: $font-xs,
+			desktop-line: $font-line-height-xs,
+			desktop-spacing: $font-letter-spacing-default
+		)
+	)
+);
+
+$theme-typography-label: (
+	weight: $font-weight-600,
+	transform: uppercase,
+	color: $theme-text-color-secondary,
+	sizes: (
+		copy: (
+			mobile-spacing: $font-letter-spacing-m,
+			desktop-spacing: $font-letter-spacing-m
+		),
+		copySmall: (
+			mobile-spacing: $font-letter-spacing-m,
+			desktop-spacing: $font-letter-spacing-m
+		),
+		copyXSmall: (
+			mobile-spacing: $font-letter-spacing-m,
+			desktop-spacing: $font-letter-spacing-m
+		)
+	)
+);
+
+// Theme Headings
+$theme-heading: $theme-typography-heading;
+$theme-heading-inverse: map-merge($theme-typography-heading, (color: $theme-text-color-inverse));
+
+// Theme Copy
+$theme-copy: $theme-typography-copy;
+$theme-copy-inverse: map-merge($theme-typography-copy, (color: $theme-text-color-inverse));
+$theme-copy-label: non-destructive-map-merge($theme-typography-copy, $theme-typography-label);
+$theme-copy-label-inverse: map-merge(non-destructive-map-merge($theme-typography-copy, $theme-typography-label), (color: $theme-text-color-inverse-secondary));
+$theme-copy-label-spotlight: map-merge(non-destructive-map-merge($theme-typography-copy, $theme-typography-label), (color: $theme-text-color-spotlight));
+
+// Actions
+// Used on default buttons:
+$theme-action-button: map-merge($theme-typography-copy, (color: $theme-text-color-inverse, transform: uppercase, weight: $font-weight-600));
+// Used on links and CTA Links
+$theme-action-cta: map-merge($theme-typography-copy, (color: $theme-text-color-action, transform: uppercase, weight: $font-weight-600));

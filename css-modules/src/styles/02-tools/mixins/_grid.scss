@@ -1,0 +1,33 @@
+// The current code assumes that the desktop gutter-width is the default and doesn't account for multiple columns on mobile
+// Mobile columns will be added if the need arises.
+
+// GRID-SPECIFIC MIXINS
+@mixin grid {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+// TODO: We may want to find an easier-to-read way to write that width calculation in the future
+@mixin col($col, $total-columns: 12) {
+	$total-gutter-width: $grid-gutter-width * ($total-columns - 1);
+
+	margin: $theme-margin-stack;
+	width: 100%;
+
+	&:first-child {
+		margin: 0;
+	}
+
+	@include breakpoint("medium") {
+		margin: 0 $space-xl 0 0;
+		width: calc((((100% - #{$total-gutter-width}) / #{$total-columns}) * #{$col}) + (#{$grid-gutter-width} * (#{$col} - 1)));
+
+		&:first-child {
+			margin: 0 $space-xl 0 0;
+		}
+
+		&:last-child {
+			margin: 0;
+		}
+	}
+}

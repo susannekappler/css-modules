@@ -1,0 +1,18 @@
+///////////////////////////////////////////////////////////////////////////////////////////
+// Simple Variables
+///////////////////////////////////////////////////////////////////////////////////////////
+$border-width-sm: 1px;
+$border-width-m: 2px;
+$border-width-l: 4px;
+$border-style-default: solid;
+
+///////////////////////////////////////////////////////////////////////////////////////////
+// Themed/Complex Variables
+///////////////////////////////////////////////////////////////////////////////////////////
+$theme-border-default: $border-width-sm $border-style-default $theme-border-color-primary;
+$theme-border-secondary: $border-width-sm $border-style-default $theme-border-color-secondary;
+$theme-border-transparent: $border-width-sm $border-style-default $theme-border-color-transparent;
+$theme-input-border: $border-width-sm $border-style-default $theme-color-neutral-dark;
+$theme-input-border-negative: $border-width-m $border-style-default $theme-color-negative;
+$theme-border-radius-default: 4px;
+$theme-border-radius-l: 6px;

@@ -1,0 +1,5 @@
+@mixin white-block() {
+	background-color: $theme-background-color-secondary;
+	border-radius: $theme-border-radius-default;
+	box-shadow: $theme-box-shadow-default;
+}

@@ -1,0 +1,47 @@
+///////////////////////////////////////////////////////////////////////////////////////////
+// Simple Variables
+///////////////////////////////////////////////////////////////////////////////////////////
+$space-2xs: 0.25rem; //4px
+$space-xs: 0.5rem; //8px
+$space-s: 0.75rem; //12px
+$space: 1rem; //16px
+$space-l: 1.25rem; //20px
+$space-xl: 1.5rem; //24px
+$space-2xl: 2rem; //32px
+$space-3xl: 2.5rem; //40px
+$space-4xl: 5rem; //80px
+
+///////////////////////////////////////////////////////////////////////////////////////////
+// Themed/Complex Variables
+///////////////////////////////////////////////////////////////////////////////////////////
+// Margins
+$theme-margin-inline-2xs: 0 $space-2xs 0 0;
+$theme-margin-inline-xs: 0 $space-xs 0 0;
+$theme-margin-inline-s: 0 $space-s 0 0;
+$theme-margin-inline: 0 $space 0 0;
+$theme-margin-inline-l: 0 $space-l 0 0;
+$theme-margin-inline-xl: 0 $space-xl 0 0;
+$theme-margin-inline-2xl: 0 $space-2xl 0 0;
+$theme-margin-inline-3xl: 0 $space-3xl 0 0;
+$theme-margin-inline-4xl: 0 $space-4xl 0 0;
+
+$theme-margin-stack-2xs: $space-2xs 0 0 0;
+$theme-margin-stack-xs: $space-xs 0 0 0;
+$theme-margin-stack-s: $space-s 0 0 0;
+$theme-margin-stack: $space 0 0 0;
+$theme-margin-stack-l: $space-l 0 0 0;
+$theme-margin-stack-xl: $space-xl 0 0 0;
+$theme-margin-stack-2xl: $space-2xl 0 0 0;
+$theme-margin-stack-3xl: $space-3xl 0 0 0;
+$theme-margin-stack-4xl: $space-4xl 0 0 0;
+
+//Paddings
+$theme-padding-inset-2xs: $space-2xs;
+$theme-padding-inset-xs: $space-xs;
+$theme-padding-inset-s: $space-s;
+$theme-padding-inset: $space;
+$theme-padding-inset-l: $space-l;
+$theme-padding-inset-xl: $space-xl;
+$theme-padding-inset-2xl: $space-2xl;
+$theme-padding-inset-3xl: $space-3xl;
+$theme-padding-inset-4xl: $space-4xl;

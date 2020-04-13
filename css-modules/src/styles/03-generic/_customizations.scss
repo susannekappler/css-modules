@@ -1,0 +1,9 @@
+// remove clear field functyionality from webkit and ms browswers
+
+::-webkit-search-cancel-button {
+	display: none;
+}
+
+::-ms-clear {
+	display: none;
+}
