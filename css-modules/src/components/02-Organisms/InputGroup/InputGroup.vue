@@ -62,7 +62,6 @@ export default {
 
 <style lang="scss" module>
   .inputGroup {
-    border: 1px solid green;
     padding: 10px;
   }
 

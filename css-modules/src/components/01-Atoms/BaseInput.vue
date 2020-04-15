@@ -40,6 +40,6 @@ export default {
 
 <style lang="scss" scoped>
   .base-input {
-
+    padding-left: 5px;
   }
 </style>

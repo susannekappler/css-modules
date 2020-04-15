@@ -30,7 +30,7 @@ export default {
 
 <style lang="scss" module>
   .baseLabel {
-    // @include set-text-properties($theme-copy-label, copy);
-    color: red;
+    color: black;
+    font-weight: bold;
   }
 </style>
